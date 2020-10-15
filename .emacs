@@ -39,26 +39,54 @@
 ;; maximize window if gui, for windows
 ;;(w32-send-sys-command 61488)
 
+
 ;; set tabs to 4 spaces, and use tabs over spaces
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 (setq-default indent-tabs-mode t)
 
-;; load nav, a file-explorer for emacs
-(add-to-list 'load-path "~/.emacs.d/emacs-nav-49/")
-(require 'nav)
-(nav-disable-overeager-window-splitting)
-;; Optional: set up a quick key to toggle nav
-(global-set-key [f8] 'nav-toggle)
 
 ;; Aliases
 (defalias 'eob 'end-of-buffer)
 (defalias 'wsm 'whitespace-mode)
+(defalias 'cre 'comment-region)
+(defalias 'ure 'uncomment-region)
 
-;; Kamailio settings for .emacs file
-;; (setq-default c-basic-offset 4) # Not needed, it comes from stroustrup base settings.
-(c-add-style "kamailio"  '("stroustrup"
-  (c-offsets-alist
-    (case-label . +))))
 
-;; my own kamailio-mode
-(load-file "~/.emacs.d/kamailio.el")
+;; json
+(load-file "~/.emacs.d/files/json-reformat.el")
+
+;; powershell
+(load-file "~/.emacs.d/files/powershell-mode.el")
+
+;; puppet
+(load-file "~/.emacs.d/files/puppet-mode.el")
+
+;; yaml yml
+(load-file "~/.emacs.d/files/yaml-mode.el")
+
+;; s
+(load-file "~/.emacs.d/files/s.el")
+
+;; dash
+(load-file "~/.emacs.d/files/dash.el")
+
+;; groovy
+(load-file "~/.emacs.d/files/groovy-mode.el")
+
+;; mustach-mode
+;(load-file "~/.emacs.d/files/mustache-mode.el")
+
+;; eruby-mode
+(load-file "~/.emacs.d/files/eruby-mode.el")
+
+;; go-mode
+(load-file "~/.emacs.d/files/go-mode.el")
+
+
+;; load dracual if 24+
+(when (>= emacs-major-version 24)
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+  (load-theme 'dracula t))
+
+(put 'downcase-region 'disabled nil)
+
