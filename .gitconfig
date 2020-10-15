@@ -1,0 +1,11 @@
+[user]
+        name = Sebastian Thörn
+        email = thorn@p0int3r.se
+[core]
+        editor = emacs
+[color]
+        ui = true
+[alias]
+        st = status -sb
+        ci = commit
+        co = checkout
