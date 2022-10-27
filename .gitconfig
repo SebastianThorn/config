@@ -1,11 +1,17 @@
 [user]
-        name = Sebastian Thörn
-        email = thorn@p0int3r.se
+  name = Sebastian Thörn
+  email = thorn@p0int3r.se
 [core]
-        editor = emacs
+  editor = emacs
 [color]
-        ui = true
+  ui = true
 [alias]
-        st = status -sb
-        ci = commit
-        co = checkout
+  st = status -sb
+  ci = commit
+  co = checkout
+  sl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color "status"]
+  added = green bold
+  changed = red bold
+  untracked = cyan
+  branch = yellow black bold ul
