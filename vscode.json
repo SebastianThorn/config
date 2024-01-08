@@ -1,0 +1,25 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Dracula",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.title": "${rootName}${separator}${activeEditorShort}",
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
+    "files.eol": "\n",
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "center-editor-window.threeStateToggle": true,
+    "python.formatting.provider": "none",
+    "window.density.editorTabHeight": "compact",
+    "workbench.editor.pinnedTabsOnSeparateRow": true
+}
