@@ -1,0 +1,11 @@
+---
+
+vscode_plugins:
+- oderwat.indent-rainbow
+- rebornix.ruby
+- shardulm94.trailing-spaces
+- golang.go
+- ms-vscode.powershell
+- ms-python.python
+- ms-python.vscode-pylance
+- kaiwood.center-editor-window
